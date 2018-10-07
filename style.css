@@ -7,10 +7,21 @@
         background-size: 115%;
         background-position: center;
         background-attachment: fixed;
-        text-align:center; /*For IE6 Shenanigans*/ 
 } 
 a {
     text-decoration: none;
+}
+table #aboutme {
+    font-family: 'Pacifico', cursive;
+}
+table #title {
+    font-family: 'Pacifico', cursive;    
+    background: rgba(255, 192, 203, 0.7);
+}
+table .textNyName {
+  left: auto;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
 }
 .profilePage {
   background-image: url(https://pp.userapi.com/c850616/v850616203/1bfde/eoB9A2H-AsA.jpg);
@@ -58,18 +69,7 @@ table.info {
   text-align: center;
   border-bottom:  1px solid  rgba(255, 192, 203, 1);
 }
-table #aboutme {
-    font-family: 'Pacifico', cursive;
-}
-table #title {
-    font-family: 'Pacifico', cursive;    
-    background: rgba(255, 192, 203, 0.7);
-}
-table .textNyName {
-  left: auto;
-  font-size: 50px;
-  font-family: 'Pacifico', cursive;
-}
+
 #address {
   font-family: 'Pacifico', cursive;
   background-color: rgba(255, 192, 203, 0.7);
