@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <title>Portfolio</title>
+    <script type="text/javascript">
+      $(document).ready(function(e){
+        var left = 0,
+        top = 0,
+        element = $('body'),
+        offset =  { left: element.offset().left, top: element.offset().top };
+        element.bind('mousemove', function(e){
+          left = (e.pageX-offset.left);
+          top = (e.pageY-offset.top);
+          $(this).css({
+            backgroundPosition: '-'+(0.15*left)+'px -'+(0.15*top)+'px'
+          
+          });
+        });
+      });
+</script>
+  </head>
+  <body>
+    
+    
+    <p>
+    <h1  id="firstText"> Just flip down </h1>
+    </p>
+    <div class="profilePage">
+      <div class="classPhoto"><img id="idPhoto" src="https://pp.userapi.com/c850728/v850728203/197d9/ukUOn0AbkGg.jpg" 
+       alt="my photo"></div>
+      <div class="textShortStory">  
+        <table class="shortStory" >
+          <tr>
+            <td class="textNyName" colspan="3">Hi i'm Andrew</td>
+          </tr>
+            <td>I am 19 years old. I study in BNTU on the 3rd course at the Faculty of Information Technology and Robotics. My specialty is “automation of technological processes and production”. In the process of learning I studied C ++ and Python. Now I really want to learn and work with the web part. There is a goal and therefore there is a reason to study and work.
+            </td>
+          <tr>
+            <td colspan="3"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div > 
+      <table id="example" >
+        <tr id="title">
+          <td>Skills</td>
+          <td>Experience</td>
+          <td>Education</td>
+          <td>English level</td>
+        </tr>
+        <tr id="example2">
+          <td rowspan="2">Studied C ++ (basics of OOP); Python; A very small part of C #; Now I study javascript.</td>
+          <td>Experience in working with C ++ and C # was at the university: course work on working with modules of the program.</td>
+          <td rowspan="3">I study at university (BNTU). Self-study in books and online webinars. Hoping for The Rolling Scopes courses.</td>
+          <td rowspan="3">According to the test on the site <a href="https://test.str.by" target="_blank">Streamline</a> , the level of English A2</td>
+        </tr>
+        <tr id="example2">
+          <td>Python I began to learn because of interest in the language. Passed online courses and self-study on books.</td>
+        </tr>
+        <tr id="example2">
+          <td>I also know the basics of Photoshop, Lightroom and Adobe After Effects.</td>
+          <td>I am learning javascript now. I take courses, attend webinars and meetup. Code examples on github.
+            <div> 
+              <a id="address" href="https://github.com/PresidentsBoyfriend" target="_blank">Click</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+      <div id="block2">
+        <table class="info">
+            <tr>
+                <td id="aboutme" colspan="3">Contacts</td>
+              </tr>
+              <tr>
+                <td>Full-name</td>
+                <td> : </td>
+                <td>Andrey Markushevsky</td>
+              </tr>
+              <tr >
+                <td>Address</td>
+                <td> : </td>
+                <td>Minsk</td>
+              </tr>
+              <tr>
+                <td>e-mail</td>
+                <td> : </td>
+                <td>fs.as.8585@gmail.com</td>
+              </tr>
+              <tr>
+                <td>phone</td>
+                <td> : </td>
+                <td>+375 (29) 822-00-80</td>
+              </tr>
+        </table>
+      </div>
+  </body>
+</html>
